@@ -3,65 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-        h1 {
-            margin: 0;
-        }
-        main {
-            padding: 20px;
-        }
-        .profile {
-            max-width: 600px;
-            margin: auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .profile img {
-            width: 200px;
-            height: auto;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-        .profile h2 {
-            margin-top: 0;
-        }
-        .profile p {
-            line-height: 1.6;
-        }
-    </style>
+    <title>Account System</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
-    <h1>My Profile</h1>
+    <h1>Account System</h1>
 </header>
 
-<main>
-    <div class="profile">
-        <img src="profile_picture.jpg">
-        <h2>Kavisha Rajapaksha</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed porttitor lectus nibh.
-        </p>
-        <p>Email: kavisha.rajapaksha1@gmail.com</p>
-        <p>Location: No/75Paragamana,Kegalle</p>
-    </div>
-</main>
+<section id="account">
+    <h2>Create an Account</h2>
+    <form id="signupForm" method="POST" action="signup.php">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Sign Up</button>
+    </form>
+</section>
 
+<section id="login">
+    <h2>Log In</h2>
+    <form id="loginForm" method="POST" action="login.php">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Log In</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Account System</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
