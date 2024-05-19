@@ -3,37 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account System</title>
+    <title>My Personal Blog</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
-    <h1>Account System</h1>
+    <h1>My Personal Blog</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
-<section id="account">
-    <h2>Create an Account</h2>
-    <form id="signupForm" method="POST" action="signup.php">
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <button type="submit">Sign Up</button>
-    </form>
-</section>
+<main>
+    <section id="home">
+        <h2>Welcome to My Blog!</h2>
+        <p>This is where I share my thoughts, experiences, and adventures.</p>
+    </section>
 
-<section id="login">
-    <h2>Log In</h2>
-    <form id="loginForm" method="POST" action="login.php">
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <button type="submit">Log In</button>
-    </form>
-</section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a passionate writer who loves to explore various topics and share my insights with others.</p>
+    </section>
+
+    <section id="blog">
+        <h2>Recent Posts</h2>
+        <article>
+            <h3>My First Post</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            <a href="#">Read More</a>
+        </article>
+        <article>
+            <h3>Another Post</h3>
+            <p>Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+            <a href="#">Read More</a>
+        </article>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me via email or social media!</p>
+        <ul>
+            <li>Email: example@example.com</li>
+            <li>Twitter: <a href="https://twitter.com/example">@example</a></li>
+            <li>Instagram: <a href="https://instagram.com/example">@example</a></li>
+        </ul>
+    </section>
+</main>
 
 <footer>
-    <p>&copy; 2024 Account System</p>
+    <p>&copy; 2024 My Personal Blog</p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
