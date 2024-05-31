@@ -1,26 +1,69 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.5">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
-    span.s1 {font-kerning: none}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1">&lt;?php</span></p>
-<p class="p1"><span class="s1">if ($_SERVER["REQUEST_METHOD"] == "POST") {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>$username = $_POST["username"];</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>$password = $_POST["password"];</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// Save the username and password to a database</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// For demonstration purposes, we'll just print them</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>echo "Username: " . $username . "&lt;br&gt;";</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>echo "Password: " . $password;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">?&gt;</span></p>
-</body>
-</html>
+body {
+    margin: 0;
+    font-family: 'Monaco', sans-serif;
+    background-color: #0e0b16;
+    color: #ffffff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0e0b16;
+    padding: 1em 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #be5a5a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px 50px 50px;
+    height: 100vh;
+    background: linear-gradient(45deg, #1f1b24, #2e2a33);
+}
+
+.intro .content {
+    max-width: 50%;
+}
+
+.intro .content h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.intro .content .highlight {
+    color: #9263cb;
+}
+
+.intro .content p {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+}
+
+.intro .image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image {
+    max-width: 45%;
+}
